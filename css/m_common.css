@@ -80,16 +80,16 @@ html,body{
 	margin-top: 0.18rem;
 }
 .header .nav li{
-	width: 1.97rem;
-	height: 0.7rem;
+	width: 1.7rem;
+	height: 0.5rem;
   border-bottom: 1px dashed #fff;
   text-align: center;
 }
 .header .nav li a{
-	font-size: 0.3rem;
+	font-size: 0.24rem;
 	color: #3e3a39;
-	height: 0.7rem;
-	line-height: 0.7rem;
+	height: 0.5rem;
+	line-height: 0.5rem;
 }
 
 
