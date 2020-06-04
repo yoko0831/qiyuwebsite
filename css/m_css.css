@@ -24,7 +24,10 @@
   margin-top: 0.5rem;
   width: 100%;
   overflow-x: scroll;
-  padding: 0 0.22rem;
+  padding: 0 0.22rem;  
+}
+::-webkit-scrollbar {
+  display: none!important;
 }
 .introduce .module{
   width: 3.33rem;
