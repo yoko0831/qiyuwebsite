@@ -2,12 +2,11 @@ html,body{
   background: #fff;
 }
 .container{
-	width: 1200px;
+	width: 100%;
   margin: 0 auto;
 }
 .container-fluid{
   width: 100%;
-  min-width: 1200px;
 	margin: 0 auto;
 }
 /* header */
@@ -15,25 +14,26 @@ html,body{
   display: flex;
   justify-content: space-between;
   align-items: center;
-  height: 185px;
+  height: 1.43rem;
+  padding: 0 0.32rem;
 }
 .header .logo{
   display: flex;
 
 }
 .header .logo img{
-  width: 110px;
-  height: 110px;
+  width: 0.86rem;
+  height: 0.86rem;
 }
 .header .logo p{
-  font-size: 20px;
+  font-size: 0.2rem;
   letter-spacing: 1px;
   color: #9fa0a0;
-  line-height: 25px;
-  margin: 35px 0 0 15px;
+  line-height: 0.28rem;
+  margin: 0.17rem 0 0 0.13rem
 }
 .header .main{
-  width: 680px;
+  display: none;
 }
 
 .header .info{
@@ -145,10 +145,10 @@ html,body{
 
 /* footer */
 .footer{
-  height: 365px;
+  height: 2.07rem;
 }
 .footer-main{
-  height: 295px;
+  height: 1.67rem;
   background: #3e3e3e;
 }
 .footer-group{
@@ -157,89 +157,60 @@ html,body{
   justify-content: space-between;
 }
 .footer-group .logo{
-  width: 140px;
-  height: 140px;
-  margin-top: 68px;
+  width: 0.8rem;
+  height: 0.8rem;
+  margin: 0.38rem 0 0 0.3rem;
 }
 .footer-middle{
-  margin-left: -50px;
+  display: none;
 }
-.footer-middle .nav{
-  display: flex;
-  width: 652px;
-  justify-content: space-between;
-  margin-top: 78px;
+.m-footer-middle{
+  margin-left: 0.22rem;
+  flex: 1;
 }
-.footer-middle .nav li a{
-  font-size: 16px;
-  letter-spacing: 1px;
+.m-footer-middle h1{
+  font-size: 0.15rem;
+  font-weight: bold;
   color: #d6a36a;
+  margin: 0.34rem 0 0.12rem 0;
 }
-.footer-middle .nav li a:hover{
-  text-decoration: underline;
+.m-footer-middle p{
+  font-size: 0.13rem;
+  color: #d6a36a;
+  line-height: 0.18rem;
 }
-.footer-middle .company{
-  width: 652px;
-  display: flex;
-  margin-top: 34px;
-  justify-content: space-between;
-}
-.footer-middle .company .left h1{
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  margin-bottom: 10px;
-}
-.footer-middle .company .left p{
-  font-size: 16px;
-  letter-spacing: 1px;
-  line-height: 25px;
-}
-.footer-middle .company .right{
-  margin-top: 20px;
-}
-.footer-middle .company .right h2{
-  font-size: 20px;
-  font-weight: bold;
-  letter-spacing: 1px;
-  line-height: 30px;
-}
+
 .footer-group .ewm{
   display: flex;
-  width: 245px;
+  width: 2rem;
   justify-content: space-between;
-  margin-top: 78px;
+  margin:0.32rem 0.3rem 0 0;
 }
 .footer-group .ewm .module{
-  width: 108px;
+  width: 0.9rem;
   text-align: center;
 }
 .footer-group .ewm .module img{
-  width: 108px;
-  height: 108px;
+  width: 0.9rem;
+  height: 0.9rem;
 }
 .footer-group .ewm .module p{
-  font-size: 16px;
+  font-size: 0.12rem;
   font-weight: bold;
   letter-spacing: 1px;
-  margin-top: 6px;
+  margin-top: 0.07rem;
 }
 .footer-info{
-  height: 70px;
+  height: 0.4rem;
   background: #242424;
 }
 .footer-info > div{
-  width: 740px;
-  height: 70px;
+  padding: 0 0.2rem;
+  height: 0.4rem;
   margin: 0 auto;
   display: flex;
   justify-content: space-between;
   align-items: center;
-  font-size: 14px;
+  font-size: 0.12rem;
   color: #595757;
-  letter-spacing: 1px;
-}
-/* 需隐藏移动端内容 */
-.m-footer-middle{
-  display: none;
 }

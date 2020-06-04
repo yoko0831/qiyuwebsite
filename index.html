@@ -6,16 +6,28 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta content="email=no" name="format-detection" />
   <title>北京奇愈生物科技有限公司——首页</title>
   <link rel="stylesheet" href="css/reset.css">
-  <link rel="stylesheet" href="css/common.css">
-  <link rel="stylesheet" href="css/css.css">
+  <!-- <link rel="stylesheet" href="css/common.css">
+  <link rel="stylesheet" href="css/css.css"> -->
   <link rel="stylesheet" href="css/swiper.min.css">
   <link rel="icon" type="image/x-icon" href="favicon.ico" />
   <script src="js/jquery-1.8.3.min.js"></script>
   <script src="js/common.js"></script>
-
+  <!-- 根据分辨率加载相应css -->
+  <!-- pc端css -->
+  <link rel="stylesheet" type="text/css" href="css/common.css" media="screen and (min-width:960px)" />
+  <link rel="stylesheet" type="text/css" href="css/css.css" media="screen and (min-width:960px)" />
+  <!-- 移动端css -->
+  <link rel="stylesheet" type="text/css" href="css/m_common.css" media="screen and (max-width:959px)" />
+  <link rel="stylesheet" type="text/css" href="css/m_css.css" media="screen and (max-width:959px)" />
+  <!-- 移动端适配rem.js -->
+  <script src="js/rem.js"></script>
 </head>
 
 <body>
@@ -79,8 +91,13 @@
   <div class="banner_group">
     <div class="swiper-container">
       <div class="swiper-wrapper">
-        <div class="swiper-slide"><img src="images/banner1.jpg" alt=""></div>
-        <div class="swiper-slide"><img src="images/banner2.jpg" alt=""></div>
+        <!-- 宽度小于960时加载banner1_m 其余情况加载banner1-->
+        <div class="swiper-slide">
+          <img src="images/banner1_m.jpg" srcset="images/banner1_m.jpg 960w, images/banner1.jpg 1x" />
+        </div>
+        <div class="swiper-slide">
+          <img src="images/banner2_m.jpg" srcset="images/banner2_m.jpg 960w, images/banner2.jpg 1x" />
+        </div>
       </div>
       <!-- 如果需要分页器 -->
       <div class="swiper-pagination"></div>
@@ -88,34 +105,34 @@
   </div>
   <!-- introduce -->
   <div class="introduce container">
-    <div class="module">
+    <a href="pages/brand.html" class="module">
       <div><img src="images/inset01.png" alt=""></div>
       <h1>品牌起源</h1>
       <h3>从非洲到中国</h3>
-      <p>从原始部落的神秘圣药到如今呈现在您面前的七予膏<br>我们始终敬畏自然，相信奇愈力量</p>
-    </div>
-    <div class="module">
+      <p>从原始部落的神秘圣药到如今呈现在您面前的七予膏，我们始终敬畏自然，相信奇愈力量</p>
+    </a>
+    <a href="pages/aboutus.html" class="module">
       <div><img src="images/inset02.png" alt=""></div>
       <h1>企业实力</h1>
       <h3>全球植物药品种植中心计划正式启动</h3>
-      <p>升级现有非洲原料保护基地，注入全球生物科研力量<br>致力于多元化产品研发,令您不再因伤而伤</p>
-    </div>
-    <div class="module">
+      <p>升级现有非洲原料保护基地，注入全球生物科研力量致力于多元化产品研发,令您不再因伤而伤</p>
+    </a>
+    <a href="pages/product.html" class="module">
       <div><img src="images/inset03.png" alt=""></div>
       <h1>治愈效果</h1>
       <h3>七予膏CUREWOUNDING</h3>
-      <p>专注于疑难创伤的快速奇愈方案,终结久治不愈，<br>开启生命新肌</p>
-    </div>
+      <p>专注于疑难创伤的快速奇愈方案,终结久治不愈，开启生命新肌</p>
+    </a>
   </div>
   <!-- brand -->
   <div class="brand container-fluid">
     <div class="brand_group container">
       <img class="brand_title" src="images/brand_title.png" alt="">
+      <img class="inset" src="images/inset04.png" alt="">
       <p class="brand_txt">
-        公元2世纪初，位于西部非洲的一个原始神秘部落的酋长偶然发现当地特有植物和提取的植物油脂混合后对外伤有着特殊的修复能力。后经多次配制与人体实验，成为一种对于身体表面部位创伤具有神奇治愈效果的秘方，而此秘方一直在历代部落酋长中秘传<br>…
+        公元2世纪初，位于西部非洲的一个原始神秘部落的酋长偶然发现当地特有植物和提取的植物油脂混合后对外伤有着特殊的修复能力。后经多次配制与人体实验，成为一种对于身体表面部位创伤具有神奇治愈效果的秘方，而此秘方一直在历代部落酋长中秘传…
         …</p>
       <a href="pages/brand.html" class="brand_link">了解更多</a>
-      <img class="inset" src="images/inset04.png" alt="">
     </div>
   </div>
   <!-- advantage -->
@@ -141,6 +158,7 @@
     <div class="footer-main container-fluid">
       <div class="footer-group container">
         <img class="logo" src="images/logo.png" alt="北京奇愈生物科技有限公司">
+        <!-- footer-middle内容pc端显示 移动端隐藏 -->
         <div class="footer-middle">
           <ul class="nav">
             <li><a href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
@@ -168,6 +186,14 @@
               <h2>抖音：beijingqiyusw</h2>
             </div>
           </div>
+        </div>
+        <!-- m-footer-middle内容移动端显示 pc端隐藏 -->
+        <div class="m-footer-middle">
+          <h1>北京奇愈生物科技有限公司</h1>
+          <p>地址：北京市朝阳区安立路1号1幢一层156</p>
+          <p>邮箱：qiyu@qiyusw.cn</p>
+          <p>电话：010-64653636</p>
+          <p>抖音：beijingqiyusw</p>
         </div>
         <div class="ewm">
           <div class="module">
@@ -200,6 +226,7 @@
     // 如果需要分页器
     pagination: {
       el: '.swiper-pagination',
+      clickable: true,
     },
   });
 </script>

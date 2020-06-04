@@ -2,19 +2,17 @@
 /* banner */
 .banner_group .swiper-container {
   width: 100%;
-  min-width: 1200px;
-  max-height: 520px;
 }
 .banner_group .swiper-slide img{
   width: 100%;
 }
 .banner_group .swiper-pagination-bullet {
-  width: 87px!important;
-  height: 6px!important;
+  width: 0.53rem!important;
+  height: 0.03rem!important;
   background: #fff!important;
   border-radius: 0!important;
   opacity: 1 !important;
-  margin: 0 7px!important;
+  margin: 0 0.07rem!important;
 }
 .banner_group .swiper-pagination-bullet-active {
   background: #d6a36a!important;
@@ -23,14 +21,17 @@
 .introduce{
   display: flex;
   justify-content: space-between;
-  margin-top: 70px;
+  margin-top: 0.5rem;
+  width: 100%;
+  overflow-x: scroll;
+  padding: 0 0.22rem;
 }
 .introduce .module{
-  width: 392px;
+  width: 3.33rem;
+  margin-right: 0.1rem;
 }
 .introduce .module > div{
-  width: 392px;
-  height: 226px;
+  width: 3.33rem;
   overflow: hidden;
   cursor: pointer;
 }
@@ -39,126 +40,120 @@
   transition: all .5s ease;
 }
 .introduce .module img{
-  width: 392px;
-  height: 226px;
+  width: 3.33rem;
+  height: 1.93rem;
 }
 .introduce .module h1{
-  width: 392px;
-  height: 42px;
-  line-height: 42px;
-  margin-top: 8px;
-  font-size: 20px;
+  width: 3.33rem;
+  height: 0.4rem;
+  line-height: 0.4rem;
+  margin-top: 0.06rem;
+  font-size: 0.18rem;
   font-weight: bold;
   letter-spacing: 1px;
   color: #d6a36a;
   border-bottom: 2px solid #efefef;
 }
 .introduce .module h3{
-  width: 392px;
-  font-size: 16px;
+  width: 3.33rem;
+  font-size: 0.16rem;
   font-weight: bold;
   color: #3e3a39;
-  line-height: 30px;
-  margin-top: 15px;
+  line-height: 0.3rem;
+  margin-top: 0.15rem;
 }
 .introduce .module p{
-  width: 392px;
-  font-size: 16px;
+  width: 3.33rem;
+  font-size: 0.15rem;
   color: #727171;
-  line-height: 28px;
+  line-height: 0.28rem;
 }
 /* brand */
 .brand{
-  height: 506px;
+  height: 6.9rem;
   background-color: #f4f4f4;
-  /* opacity: 0.7; */
-  margin-top: 80px;
+  margin-top: 0.5rem;
 }
 .brand_group{
   position: relative;
   overflow: hidden;
-  height: 506px;
+  height: 6.9rem;
 }
 .brand_group .brand_title{
-  margin-top: 100px;
+  margin-top: 0.36rem;
+  margin-left: 0.42rem;
+  width: 2.77rem;
 }
 .brand_group .brand_txt{
-  width: 515px;
-  font-size: 18px;
+  width: 6.2rem;
+  font-size: 0.16rem;
   color: #3e3a39;
-  line-height: 32px;
+  line-height: 0.32rem;
   text-align: justify;
-  margin-top: 40px;
+  margin: 0.4rem auto 0;
 }
 .brand_group .brand_link{
-  width: 213px;
-	height: 38px;
+  width: 2.63rem;
+	height: 0.48rem;
   background-color: #d6a36a;
   color: #fff;
-  font-size: 18px;
+  font-size: 0.22rem;
   text-align: center;
-  line-height: 38px;
+  line-height: 0.48rem;
   border-radius: 35px;
-  display: inline-block;
-  margin-top: 50px;
+  display: block;
+  margin: 0.25rem auto 0;
 }
 .brand_group .brand_link:hover{
   background-color: #dfb280;
   transition: all .3s ease;
 }
 .brand_group .inset{
-  width: 646px;
-  height: 420px;
-  position: absolute;
-  right: 0;
-  top: 40px;
+  width: 5.07rem;
+  display: block;
+  margin: 0.3rem auto 0;
 }
 .advantage{
-
+  padding: 0 0.3rem;
 }
 .advantage h1{
-  font-size: 48px;
+  font-size: 0.28rem;
   font-weight: bold;
-	letter-spacing: 2px;
   color: #d6a36a;
   text-align: center;
-  margin-top: 85px;
+  margin-top: 0.7rem;
 }
 .advantage .advantage_group{
   width: 100%;
   display: flex;
   justify-content: space-between;
-  margin: 65px auto 90px;
+  margin: 0.55rem auto 0.8rem;
 }
 .advantage_group .module{
-  width: 351px;
-  height: 453px;
-  box-shadow: -5px 0px 29px 0px 
-    rgba(0, 0, 0, 0.2);
+  width: 2.16rem;
+  height: 2.76rem;
+  box-shadow: 0px 2px 10px 0px 
+  rgba(0, 0, 0, 0.1);
   overflow: hidden;
   cursor: pointer;
 }
 .advantage_group .module img{
   display: block;
-  margin: 80px auto 0;
+  margin: 0.5rem auto 0;
+  width: 1.13rem;
 }
 .advantage_group .module p{
-  width: 298px;
-	height: 60px;
+  width: 1.84rem;
+	height: 0.38rem;
 	background-color: #ffffff;
   border: solid 1px #d6a36a;
   box-sizing: border-box;
   border-radius: 30px;
-  margin: 70px auto 0;
-  font-size: 27px;
-  letter-spacing: 2px;
+  margin: 0.47rem auto 0;
+  font-size: 0.18rem;
   color: #3e3a39;
   text-align: center;
-  line-height: 57px;
-}
-.advantage_group .module:hover{
-  transform: scale(1.05);
-  transition: all 1s ease;
+  line-height: 0.33rem;
 }
 .advantage_group .module:hover p{
   background-color: #d6a36a;
