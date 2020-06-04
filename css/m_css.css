@@ -55,7 +55,7 @@
   font-weight: bold;
   letter-spacing: 1px;
   color: #d6a36a;
-  border-bottom: 2px solid #efefef;
+  border-bottom: 1px solid #efefef;
 }
 .introduce .module h3{
   width: 3.33rem;
@@ -156,7 +156,7 @@
   font-size: 0.18rem;
   color: #3e3a39;
   text-align: center;
-  line-height: 0.33rem;
+  line-height: 0.38rem;
 }
 .advantage_group .module:hover p{
   background-color: #d6a36a;
