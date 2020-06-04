@@ -28,6 +28,13 @@
   <link rel="stylesheet" type="text/css" href="css/m_css.css" media="screen and (max-width:959px)" />
   <!-- 移动端适配rem.js -->
   <script src="js/rem.js"></script>
+  <script>
+    $(function () {
+      $(".nav_btn").click(function () {
+        $(".nav").slideToggle();
+      })
+    })
+  </script>
 </head>
 
 <body>
@@ -37,6 +44,7 @@
       <img src="images/logo.png" alt="奇愈生物科技">
       <p>源自非洲原始部落<br />专注疑难创伤的奇愈力量</p>
     </a>
+    <!-- main 内容pc端显示 移动端隐藏 -->
     <div class="main">
       <div class="info">
         <div class="search_group">
@@ -83,6 +91,23 @@
             </ul>
           </div>
         </li>
+        <li><a href="pages/contactus.html">联系我们</a></li>
+      </ul>
+    </div>
+    <!-- m-main 内容移动端显示 pc端隐藏 -->
+    <div class="m-main">
+      <div class="phone_group">
+        <img src="images/icon_phone.png" alt="">
+        <p>010-64653636</p>
+      </div>
+      <a href="#" class="nav_btn"><img src="images/m_nav_btn.png" alt=""></a>
+      <ul class="nav">
+        <li><a href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li><a href="pages/brand.html">品牌故事</a></li>
+        <li><a href="pages/product.html">产品中心</a></li>
+        <li><a href="pages/case.html">客户案例</a></li>
+        <li><a href="pages/aboutus.html">走进奇愈</a></li>
+        <li><a href="pages/company.html">公司动态</a></li>
         <li><a href="pages/contactus.html">联系我们</a></li>
       </ul>
     </div>

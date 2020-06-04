@@ -35,7 +35,9 @@ html,body{
 .header .main{
   display: none;
 }
-
+.header .m-main{
+  display: flex;
+}
 .header .info{
   display: flex;
   justify-content: space-between;
@@ -43,103 +45,51 @@ html,body{
   margin-left: 130px;
   margin-top: -20px;
 }
-.header .info .search_group{
-  width: 284px;
-	height: 25px;
-	background-color: #ffffff;
-	border-radius: 2px;
-  border: solid 1px #d3d3d3;
-  box-sizing: border-box;
-  display: flex;
-  justify-content: space-between;
-  align-items: center;
-}
-.header .info .search_group input{
-  margin-left: 24px;
-  height: 23px;
-  color: #666;
-  border: 0 none;
-  flex: 1;
-}
-.header .info .search_group ::-webkit-input-placeholder { /* Chrome/Opera/Safari */ 
-  color: #d6d6d6;
-}
-.header .info .search_group ::-moz-placeholder { /* Firefox 19+ */  
-  color: #d6d6d6;
-}
-.header .info .search_group :-ms-input-placeholder { /* IE 10+ */ 
-  color: #d6d6d6;
-}
-.header .info .search_group :-moz-placeholder { /* Firefox 18- */ 
-  color: #d6d6d6;
-}
-
-.header .info .search_group button{
-  width: 30px;
-  height: 23px;
-  border: 0 none;
-  background: #fff;
-}
 .header .phone_group{
   display: flex;
   justify-content: flex-start;
   align-items: center;
 }
 .header .phone_group > img{
-  width: 30px;
-  height: 23px;
+  width: 0.28rem;
 }
 .header .phone_group > p{
-  font-size: 24px;
-	letter-spacing: 1px;
+  font-size: 0.18rem;
   color: #d6a36a;
   font-weight: bold;
-  margin-left: 13px;
+  margin-left: 0.08rem;
+}
+.header .nav_btn{
+  width: 0.7rem;
+  height: 0.7rem;
+  margin-left: 0.1rem;
+}
+.header .nav_btn img{
+  width: 100%;
 }
 .header .nav{
-  display: flex;
-  justify-content: space-between;
-  margin-top: 30px;
-  font-size: 18px;
-  z-index: 999;
-  position: relative;
-} 
-.header .nav li {
+	background-color: #d6a36a;
+	opacity: 0.85;
+	position: absolute;
+	top: 1.2rem;
+	right: 0.3rem;
+	display: none;
+	z-index: 999;
+}
+.header .nav ul{
+	margin-top: 0.18rem;
+}
+.header .nav li{
+	width: 1.97rem;
+	height: 0.7rem;
+  border-bottom: 1px dashed #fff;
   text-align: center;
-  position: relative;
-  cursor: pointer;
-  width: 112px;
 }
-
-.header .nav div {
-  position: absolute;
-  left: -10px;
-  top: 30px;
-  display: none;
-}
-.header .nav div ul{
-  padding: 14px 0;
-  background: #d6a36a;
-  margin-top: -11px;
-}
-
-.header .nav ul a{
-  font-size: 16px;
-  letter-spacing: 1px;
-  color: #fff;
-  line-height: 35px;
-}
-.header .nav > li > a{
-  color: #3e3a39;
-  letter-spacing: 1px;
-}
-.header .nav > li > a:hover{
-  color: #d09f69;
-  transition: all .3s ease;
-}
-.header .nav > li > a.active{
-  color: #d09f69;
-  font-weight: bold;
+.header .nav li a{
+	font-size: 0.3rem;
+	color: #3e3a39;
+	height: 0.7rem;
+	line-height: 0.7rem;
 }
 
 
