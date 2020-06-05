@@ -7,8 +7,8 @@
   width: 100%;
 }
 .banner_group .swiper-pagination-bullet {
-  width: 0.53rem!important;
-  height: 0.03rem!important;
+  width: 0.6rem!important;
+  height: 0.06rem!important;
   background: #fff!important;
   border-radius: 0!important;
   opacity: 1 !important;
@@ -147,7 +147,6 @@
 }
 .advantage_group .module p{
   width: 1.84rem;
-	height: 0.38rem;
 	background-color: #ffffff;
   border: solid 1px #d6a36a;
   box-sizing: border-box;
@@ -156,7 +155,7 @@
   font-size: 0.18rem;
   color: #3e3a39;
   text-align: center;
-  line-height: 0.38rem;
+  padding: 0.11rem 0;
 }
 .advantage_group .module:hover p{
   background-color: #d6a36a;

@@ -51,10 +51,10 @@ html,body{
   align-items: center;
 }
 .header .phone_group > img{
-  width: 0.28rem;
+  width: 0.32rem;
 }
 .header .phone_group > p{
-  font-size: 0.18rem;
+  font-size: 0.2rem;
   color: #d6a36a;
   font-weight: bold;
   margin-left: 0.08rem;
@@ -127,7 +127,7 @@ html,body{
 .m-footer-middle p{
   font-size: 0.13rem;
   color: #d6a36a;
-  line-height: 0.18rem;
+  line-height: 0.2rem;
 }
 
 .footer-group .ewm{
