@@ -240,7 +240,7 @@ html,body{
   letter-spacing: 1px;
 }
 /* 需隐藏移动端内容 */
-.header .m-footer-middle{
+.footer .m-footer-middle{
   display: none;
 }
 .header .m-main{
