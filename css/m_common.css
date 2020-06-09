@@ -62,34 +62,40 @@ html,body{
 .header .nav_btn{
   width: 0.7rem;
   height: 0.7rem;
-  margin-left: 0.1rem;
+  margin-left: 0.15rem;
 }
 .header .nav_btn img{
   width: 100%;
 }
 .header .nav{
-	background-color: #d6a36a;
-	opacity: 0.85;
+	background-color: #d09f69;
+	opacity: 0.9;
 	position: absolute;
-	top: 1.2rem;
-	right: 0.3rem;
+	top: 0.35rem;
+	right: 1.2rem;
 	display: none;
-	z-index: 999;
-}
-.header .nav ul{
-	margin-top: 0.18rem;
+  z-index: 999;
+  padding: 0.2rem 0 0.5rem;
 }
 .header .nav li{
-	width: 1.7rem;
-	height: 0.5rem;
+	width: 2.2rem;
+	height: 0.8rem;
   border-bottom: 1px dashed #fff;
   text-align: center;
 }
 .header .nav li a{
-	font-size: 0.24rem;
-	color: #3e3a39;
-	height: 0.5rem;
-	line-height: 0.5rem;
+	font-size: 0.3rem;
+	color: #fff;
+	height: 0.8rem;
+  line-height: 0.8rem;
+  letter-spacing: 1px;
+}
+.header .nav_arrow{
+  position: absolute;
+  display: none;
+  top: 0.6rem;
+  right: 1.1rem;
+  z-index: 999;
 }
 
 

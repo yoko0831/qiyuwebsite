@@ -6,7 +6,7 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0;" name="viewport" />
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
   <meta content="yes" name="apple-mobile-web-app-capable" />
   <meta content="black" name="apple-mobile-web-app-status-bar-style" />
   <meta content="telephone=no" name="format-detection" />
@@ -31,6 +31,7 @@
   <script>
     $(function () {
       $(".nav_btn").click(function () {
+        $(".nav_arrow").slideToggle();
         $(".nav").slideToggle();
       })
     })
@@ -58,7 +59,7 @@
       </div>
       <!-- nav -->
       <ul class="nav" id="nav">
-        <li><a href="index.html" class="active">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li><a href="index.html" class="active">首&emsp;&emsp;页</a></li>
         <li><a href="pages/brand.html">品牌故事</a></li>
         <li>
           <a href="pages/product.html">产品中心</a>
@@ -70,7 +71,7 @@
           </div>
         </li>
         <li><a href="pages/case.html">客户案例</a>
-          <div class="xiala" style="left: -27px;">
+          <div class="xiala" id="xialacase">
             <img src="images/navarrow.png" alt="">
             <ul>
               <li style="width: 152px;"><a href="#">七予抑菌膏案例</a></li>
@@ -101,8 +102,9 @@
         <p>010-64653636</p>
       </div>
       <a href="#" class="nav_btn"><img src="images/m_nav_btn.png" alt=""></a>
+      <div class="nav_arrow"><img src="images/m_nav_arrow.png" alt=""></div>
       <ul class="nav">
-        <li><a href="index.html">首&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li><a href="index.html">首&emsp;&emsp;页</a></li>
         <li><a href="pages/brand.html">品牌故事</a></li>
         <li><a href="pages/product.html">产品中心</a></li>
         <li><a href="pages/case.html">客户案例</a></li>

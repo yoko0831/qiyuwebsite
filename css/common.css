@@ -108,14 +108,14 @@ html,body{
   text-align: center;
   position: relative;
   cursor: pointer;
-  width: 112px;
 }
 
 .header .nav div {
   position: absolute;
-  left: -10px;
+  left: -17px;
   top: 30px;
   display: none;
+  min-width: 112px;
 }
 .header .nav div ul{
   padding: 14px 0;
@@ -140,6 +140,9 @@ html,body{
 .header .nav > li > a.active{
   color: #d09f69;
   font-weight: bold;
+}
+#xialacase{
+  left: -38px!important;
 }
 
 
