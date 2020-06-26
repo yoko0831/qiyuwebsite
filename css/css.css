@@ -343,6 +343,12 @@ animation-fill-mode: both;
   font-weight: bold;
   color: #3e3a39;
 }
+.product_detail .ullist{
+  font-size: 20px;
+  color: #3e3a39;
+  line-height: 28px;
+  padding-left: 50px;
+}
 .product_detail .proimg{
   display: block;
   margin: 20px auto;
@@ -360,114 +366,109 @@ animation-fill-mode: both;
 .case_group{
   margin-bottom: 100px;
 }
-
-.case_group .swiper1 {
-  width: 100%;
-  margin-top: 50px;
-}
-.case_group .swiper1 .selected {
-  color: #fff !important;
-  background: #d6a36a !important;
-}
-.case_group .swiper1 .swiper-slide {
-  width: 283px!important;
-  height: 53px;
-  margin-right: 22px!important;
-  background: #fff;
-  line-height: 53px;
-  text-align: center;
-  border: 1px solid #d6a36a;
-  color: #d6a36a;
-  box-sizing: border-box;
-  font-size: 24px;
-  letter-spacing: 1px;
-  /* Center slide text vertically */
-  display: -webkit-box;
-  display: -ms-flexbox;
-  display: -webkit-flex;
-  display: flex;
-  -webkit-box-pack: center;
-  -ms-flex-pack: center;
-  -webkit-justify-content: center;
-  justify-content: center;
-  -webkit-box-align: center;
-  -ms-flex-align: center;
-  -webkit-align-items: center;
-  align-items: center;
-  cursor: pointer;
-}
-.case_group .swiper2 {
-  width: 100%;
-}
-.case_group .swiper2 .swiper-slide {
-  box-sizing: border-box !important;
-  overflow-x: hidden !important;
-}
-.case_group .swiper-slide{height:1px} /* 随意指定一个height值即可 */    
-.case_group .swiper-slide-active { height:auto}
-
-
-.case_group .case_tab_title {
-  width: 100%;
-  margin-top: 50px;
+.case_group .slideTxtBox .hd {
+  margin-top: 57px;
   overflow: hidden;
-  display: flex;
-  justify-content: space-between;
 }
-.case_group .case_tab_title>li {
+
+.case_group .slideTxtBox .hd ul {
+  width: 100%;
+  overflow: hidden;
+}
+
+.case_group .slideTxtBox .hd li {
   width: 283px;
   height: 53px;
+  margin-right: 22px;
   background: #fff;
-  text-align: center;
   line-height: 53px;
-  cursor: pointer;
+  text-align: center;
   border: 1px solid #d6a36a;
   color: #d6a36a;
   box-sizing: border-box;
   font-size: 24px;
   letter-spacing: 1px;
-}
-.case_group .case_tab_main {
-  width: 1200px;
-  margin: 0 auto;
-  position: relative;
-  overflow: hidden;
-}
-.case_group .bon {
-  width: 1000%;
-}
-.case_group .bon ul li {
+  cursor: pointer;
   float: left;
-  width: 1200px;
-  padding-top: 14px;
+  margin-bottom: 10px;
 }
-.case_group .bon ul li ul li:first-child {
-  padding-top: 5px;
+
+.case_group .slideTxtBox .hd ul li.on {
+  border: 1px solid #d6a36a;
+  background: #d6a36a;
+  color: #fff;
+  transition: all ease .3s;
 }
-.case_group .case_module{
+.case_group .slideTxtBox .hd ul li:nth-child(4n+4) {
+  margin-right: 0;
+}
+.case_group .slideTxtBox .hd ul li:last-child {
+  margin-right: 0;
+}
+
+.case_group .case_module {
   width: 1200px;
   position: relative;
   border-bottom: 1px solid #dcdddd;
   padding-bottom: 70px;
   margin-top: 70px;
 }
-.case_group .fubiaoti{
+
+.case_group .case_module .title {
+  text-align: center;
+}
+
+.case_group .case_module .title h1 {
+  font-size: 62px;
+  letter-spacing: 5px;
+  color: #b98e5b;
+  margin-top: 86px;
+}
+
+.case_group .case_module .title span {
+  font-size: 30px;
+  letter-spacing: 2px;
+  color: #333233;
+  font-weight: bold;
+  line-height: 55px;
+}
+
+.case_group .case_module .title hr {
+  width: 117px;
+  height: 10px;
+  background: #b98e5b;
+  margin: 0 auto;
+}
+
+.case_group .case_module .title p {
+  font-size: 24px;
+  letter-spacing: 2px;
+  color: #333233;
+  line-height: 42px;
+  margin-top: 28px;
+}
+
+.case_group .fubiaoti {
   margin-top: 38px;
   font-size: 24px;
   color: #d6a36a;
   text-indent: 36px;
 }
-.case_group .shuoming, .case_group .zishu{
+
+.case_group .shuoming,
+.case_group .zishu {
   font-size: 18px;
   color: #3e3a39;
   line-height: 32px;
   text-indent: 36px;
   margin-top: 35px;
 }
-.case_group .shuoming{
+
+.case_group .shuoming {
   width: 705px;
 }
-.case_group .thumbnail{
+
+.case_group .thumbnail {
   width: 410px;
   height: 195px;
   overflow: hidden;
@@ -755,6 +756,9 @@ animation-fill-mode: both;
   color: #fff;
   border: 0;
   line-height: 39px;
+}
+.pagenum .pagelist li.thisclass > a{
+  color: #fff;
 }
 .pagenum .pagelist select {
   background: none;

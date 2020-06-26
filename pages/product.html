@@ -6,15 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta content="email=no" name="format-detection" />
   <title>北京奇愈生物科技有限公司——产品中心</title>
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/css.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <script src="../js/jquery-1.8.3.min.js"></script>
   <script src="../js/common.js"></script>
-
+  <!-- 根据分辨率加载相应css -->
+  <!-- pc端css -->
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="screen and (min-width:960px)" />
+  <link rel="stylesheet" type="text/css" href="../css/css.css" media="screen and (min-width:960px)" />
+  <!-- 移动端css -->
+  <link rel="stylesheet" type="text/css" href="../css/m_common.css" media="screen and (max-width:959px)" />
+  <link rel="stylesheet" type="text/css" href="../css/m_css.css" media="screen and (max-width:959px)" />
+  <!-- 移动端适配rem.js -->
+  <script src="../js/rem.js" media="screen and (max-width:959px)"></script>
+  <script>
+    $(function () {
+      $(".nav_btn").click(function () {
+        $(".nav_arrow").slideToggle();
+        $(".nav").slideToggle();
+      })
+    })
+  </script>
 </head>
 
 <body>
@@ -24,6 +43,7 @@
       <img src="../images/logo.png" alt="奇愈生物科技">
       <p>源自非洲原始部落<br />专注疑难创伤的奇愈力量</p>
     </a>
+    <!-- main 内容pc端显示 移动端隐藏 -->
     <div class="main">
       <div class="info">
         <div class="search_group">
@@ -37,7 +57,7 @@
       </div>
       <!-- nav -->
       <ul class="nav" id="nav">
-        <li><a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li><a href="../index.html">首&emsp;&emsp;页</a></li>
         <li><a href="brand.html">品牌故事</a></li>
         <li>
           <a href="product.html" class="active">产品中心</a>
@@ -49,7 +69,7 @@
           </div>
         </li>
         <li><a href="case.html">客户案例</a>
-          <div class="xiala" style="left: -27px;">
+          <div class="xiala" style="left: -38px;">
             <img src="../images/navarrow.png" alt="">
             <ul>
               <li style="width: 152px;"><a href="#">七予抑菌膏案例</a></li>
@@ -73,12 +93,54 @@
         <li><a href="contactus.html">联系我们</a></li>
       </ul>
     </div>
+    <!-- m-main 内容移动端显示 pc端隐藏 -->
+    <div class="m-main">
+      <div class="phone_group">
+        <img src="../images/icon_phone.png" alt="">
+        <p>010-64653636</p>
+      </div>
+      <a href="#" class="nav_btn"><img src="../images/m_nav_btn.png" alt=""></a>
+      <div class="nav_arrow"><img src="../images/m_nav_arrow.png" alt=""></div>
+      <ul class="nav">
+        <li><a href="../index.html">首&emsp;&emsp;页</a></li>
+        <li><a href="brand.html">品牌故事</a></li>
+        <li><a href="product.html">产品中心</a>
+          <ul class="second_nav">
+            <li><a href="product.html">七予膏</a></li>
+          </ul>
+        </li>
+        <li><a href="case.html">客户案例</a>
+          <ul class="second_nav">
+            <li><a href="case.html">七予抑菌膏案例</a></li>
+            <li>|</li>
+            <li><a href="#">七予修复膏案例</a></li>
+          </ul>
+        </li>
+        <li><a href="aboutus.html">走进奇愈</a></li>
+        <li><a href="company.html">公司动态</a>
+          <ul class="second_nav">
+            <li><a href="company.html">社会责任</a></li>
+            <li>|</li>
+            <li><a href="newslist.html">公司新闻</a></li>
+            <li>|</li>
+            <li><a href="knowledgelist.html">科普知识</a></li>
+            <li>|</li>
+            <li><a href="overseas.html">海外合作</a></li>
+            <li>|</li>
+            <li><a href="partner.html">合作伙伴</a></li>
+          </ul>
+        </li>
+        <li><a href="contactus.html">联系我们</a></li>
+      </ul>
+    </div>
   </header>
   <!-- banenr -->
-  <img class="pagebanner" src="../images/pagebanner5.png" alt="北京奇愈生物科技有限公司">
+  <img class="pagebanner" src="../images/pagebanner5_m.jpg"
+    srcset="../images/pagebanner5_m.jpg 960w, ../images/pagebanner5.jpg 1x" alt="北京奇愈生物科技有限公司" />
   <!-- page location -->
   <div class="location_group container">
-    <div><img src="../images/product_title.png" alt="产品中心"></div>
+    <div><img src="../images/product_title.png" alt="产品中心" class="product_title_img"></div>
+    <!-- location_menu移动端不显示 -->
     <div class="location_menu">
       当前位置：<a href="../index.html">首页</a><span>></span><a href="product.html">产品中心</a><span>></span><a
         href="product.html">七予膏</a>
@@ -140,13 +202,14 @@
     </a>
   </div>
   <!-- footer -->
-  <footer clasproduct_menus="footer container-fluid">
+  <footer class="footer container-fluid">
     <div class="footer-main container-fluid">
       <div class="footer-group container">
         <img class="logo" src="../images/logo.png" alt="北京奇愈生物科技有限公司">
+        <!-- footer-middle内容pc端显示 移动端隐藏 -->
         <div class="footer-middle">
           <ul class="nav">
-            <li><a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+            <li><a href="../index.html">首&emsp;&emsp;页</a></li>
             <li>|</li>
             <li><a href="brand.html">品牌故事</a></li>
             <li>|</li>
@@ -172,6 +235,14 @@
             </div>
           </div>
         </div>
+        <!-- m-footer-middle内容移动端显示 pc端隐藏 -->
+        <div class="m-footer-middle">
+          <h1>北京奇愈生物科技有限公司</h1>
+          <p>地址：北京市朝阳区安立路1号1幢一层156</p>
+          <p>邮箱：qiyu@qiyusw.cn</p>
+          <p>电话：010-64653636</p>
+          <p>抖音：beijingqiyusw</p>
+        </div>
         <div class="ewm">
           <div class="module">
             <img src="../images/douyin.png" alt="企业抖音">
@@ -189,7 +260,7 @@
         <span>COPYRIGHT 2019-2020</span>
         <span>北京奇愈生物科技有限公司</span>
         <span>ALL RIGHTS RESERVED</span>
-        <span>京ICP备15005787号</span>
+        <span><a href="http://beian.miit.gov.cn" target="_blank">京ICP备15005787号</a></span>
       </div>
     </div>
   </footer>

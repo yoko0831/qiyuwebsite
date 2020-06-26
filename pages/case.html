@@ -6,17 +6,37 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>北京奇愈生物科技有限公司——客户案例</title>
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta content="email=no" name="format-detection" />
+  <title>北京奇愈生物科技有限公司——科普知识</title>
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/css.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <script src="../js/jquery-1.8.3.min.js"></script>
   <script src="../js/common.js"></script>
-  <link rel="stylesheet" href="../css/swiper.min.css">
   <script src="../js/swiper.min.js"></script>
+  <!-- 根据分辨率加载相应css -->
+  <!-- pc端css -->
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="screen and (min-width:960px)" />
+  <link rel="stylesheet" type="text/css" href="../css/css.css" media="screen and (min-width:960px)" />
+  <!-- 移动端css -->
+  <link rel="stylesheet" type="text/css" href="../css/m_common.css" media="screen and (max-width:959px)" />
+  <link rel="stylesheet" type="text/css" href="../css/m_css.css" media="screen and (max-width:959px)" />
+  <!-- 移动端适配rem.js -->
+  <script src="../js/rem.js" media="screen and (max-width:959px)"></script>
+  <script>
+    $(function () {
+      $(".nav_btn").click(function () {
+        $(".nav_arrow").slideToggle();
+        $(".nav").slideToggle();
+      })
+    })
+  </script>
 </head>
+
 
 <body>
   <!-- header -->
@@ -25,6 +45,7 @@
       <img src="../images/logo.png" alt="奇愈生物科技">
       <p>源自非洲原始部落<br />专注疑难创伤的奇愈力量</p>
     </a>
+    <!-- main 内容pc端显示 移动端隐藏 -->
     <div class="main">
       <div class="info">
         <div class="search_group">
@@ -38,7 +59,7 @@
       </div>
       <!-- nav -->
       <ul class="nav" id="nav">
-        <li><a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li><a href="../index.html">首&emsp;&emsp;页</a></li>
         <li><a href="brand.html">品牌故事</a></li>
         <li>
           <a href="product.html">产品中心</a>
@@ -50,7 +71,7 @@
           </div>
         </li>
         <li><a href="case.html" class="active">客户案例</a>
-          <div class="xiala" style="left: -27px;">
+          <div class="xiala" style="left: -38px;">
             <img src="../images/navarrow.png" alt="">
             <ul>
               <li style="width: 152px;"><a href="#">七予抑菌膏案例</a></li>
@@ -74,12 +95,53 @@
         <li><a href="contactus.html">联系我们</a></li>
       </ul>
     </div>
+    <!-- m-main 内容移动端显示 pc端隐藏 -->
+    <div class="m-main">
+      <div class="phone_group">
+        <img src="../images/icon_phone.png" alt="">
+        <p>010-64653636</p>
+      </div>
+      <a href="#" class="nav_btn"><img src="../images/m_nav_btn.png" alt=""></a>
+      <div class="nav_arrow"><img src="../images/m_nav_arrow.png" alt=""></div>
+      <ul class="nav">
+        <li><a href="../index.html">首&emsp;&emsp;页</a></li>
+        <li><a href="brand.html">品牌故事</a></li>
+        <li><a href="product.html">产品中心</a>
+          <ul class="second_nav">
+            <li><a href="product.html">七予膏</a></li>
+          </ul>
+        </li>
+        <li><a href="case.html">客户案例</a>
+          <ul class="second_nav">
+            <li><a href="case.html">七予抑菌膏案例</a></li>
+            <li>|</li>
+            <li><a href="#">七予修复膏案例</a></li>
+          </ul>
+        </li>
+        <li><a href="aboutus.html">走进奇愈</a></li>
+        <li><a href="company.html">公司动态</a>
+          <ul class="second_nav">
+            <li><a href="company.html">社会责任</a></li>
+            <li>|</li>
+            <li><a href="newslist.html">公司新闻</a></li>
+            <li>|</li>
+            <li><a href="knowledgelist.html">科普知识</a></li>
+            <li>|</li>
+            <li><a href="overseas.html">海外合作</a></li>
+            <li>|</li>
+            <li><a href="partner.html">合作伙伴</a></li>
+          </ul>
+        </li>
+        <li><a href="contactus.html">联系我们</a></li>
+      </ul>
+    </div>
   </header>
   <!-- banenr -->
-  <img class="pagebanner" src="../images/pagebanner3.png" alt="北京奇愈生物科技有限公司">
+  <img class="pagebanner" src="../images/pagebanner6_m.jpg"
+    srcset="../images/pagebanner6_m.jpg 960w, ../images/pagebanner6.jpg 1x" alt="北京奇愈生物科技有限公司" />
   <!-- page location -->
   <div class="location_group container">
-    <div><img src="../images/case_title.png" alt=""></div>
+    <div><img src="../images/case_title.png" alt="客户案例" class="case_title_img"></div>
     <div class="location_menu">
       当前位置：<a href="../index.html">首页</a><span>></span><a href="case.html">客户案例</a><span>></span><a
         href="case.html">七予抑菌膏案例</a>
@@ -87,176 +149,188 @@
   </div>
   <!-- case -->
   <div class="case_group container">
-    <div class="swiper-container swiper1">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide selected">意外损伤</div>
-        <div class="swiper-slide">肌肤病症</div>
-        <div class="swiper-slide">手术及并发症皮损</div>
-        <div class="swiper-slide">内分泌疾病</div>
+    <div class="slideTxtBox">
+      <div class="hd">
+        <ul class="tabs clearfix">
+          <li class="on">意外损伤</li>
+          <li>肌肤病症</li>
+          <li>手术及并发症皮损</li>
+          <li>内分泌疾病</li>
+        </ul>
       </div>
-    </div>
-    <!-- swiper2 -->
-    <div class="swiper-container swiper2">
-      <div class="swiper-wrapper">
-        <div class="swiper-slide swiper-no-swiping">
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>意外损伤 — 烧伤案例</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">该患者全脸被明火烧伤后，立即用冷水对伤口进行了降温处理，然后敷上药膏。第二天烧伤的皮肤就恢复了些许知觉，在坚持敷药膏20天后，皮肤完全修复。</p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              意外来的猝不及防，飞来横祸，好在有七予膏。用了将近三周，皮肤就完全修复了，而且肌肤就像新生的一般，肤质竟然有变好。特此我还多了解了一下，原来七予膏是来自于非洲原始部落的配方，真的很神奇。有这样的有效的药膏，真的让人少走弯路，减少创伤带来的痛苦。
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg1.jpg" alt=""></div>
+      <div class="swiper-container">
+        <div class="swiper-wrapper">
+          <div class="swiper-slide swiper-slide-visible swiper-slide-active">
+            <div class="content-slide">
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>意外损伤 — 烧伤案例</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">该患者全脸被明火烧伤后，立即用冷水对伤口进行了降温处理，然后敷上药膏。第二天烧伤的皮肤就恢复了些许知觉，在坚持敷药膏20天后，皮肤完全修复。</p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  意外来的猝不及防，飞来横祸，好在有七予膏。用了将近三周，皮肤就完全修复了，而且肌肤就像新生的一般，肤质竟然有变好。特此我还多了解了一下，原来七予膏是来自于非洲原始部落的配方，真的很神奇。有这样的有效的药膏，真的让人少走弯路，减少创伤带来的痛苦。
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg1.jpg" alt=""></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide swiper-no-swiping">
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>肌肤病症 — 干手症</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">李先生，患干手症多年，尝试各种药膏均无效，生活工作深受影响。偶然机会听说七予
-              膏，抱着试试看的想法早晚坚持涂抹，一周后，手部皮肤完全恢复正常。</p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              干手症虽然不是什么大毛病，但是真的很恼人。平时生活和工作都会受到影响，经常担忧因此造成的尴尬，各种药膏也用了都没见效。直到找到七予膏，竟然仅仅一周就完全治愈了，真的太神奇了。马上推荐给其他朋友了，这么好的药膏值得分享！
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg2.jpg" alt=""></div>
+          <!-- 意外损伤 end-->
+          <div class="swiper-slide">
+            <div class="content-slide">
+              <!-- 一个案例 -->
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>肌肤病症 — 干手症</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">李先生，患干手症多年，尝试各种药膏均无效，生活工作深受影响。偶然机会听说七予
+                  膏，抱着试试看的想法早晚坚持涂抹，一周后，手部皮肤完全恢复正常。</p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  干手症虽然不是什么大毛病，但是真的很恼人。平时生活和工作都会受到影响，经常担忧因此造成的尴尬，各种药膏也用了都没见效。直到找到七予膏，竟然仅仅一周就完全治愈了，真的太神奇了。马上推荐给其他朋友了，这么好的药膏值得分享！
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg2.jpg" alt=""></div>
+              </div>
+              <!-- 一个案例 -->
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>肌肤病症 — 脚后跟皴裂</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">高女士，每年冬季脚后跟皴裂，疼痛难忍。坚持每晚涂抹七予膏一周后，皴裂完全修复。</p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  我最害怕的就是冬天了，脚后跟皲裂疼痛难忍，试过多种方式效果都不是很好。家人也帮忙找过各种偏方，都以失败告终了。没想到用七予膏完全修复了，真的太感谢七予膏。
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg3.jpg" alt=""></div>
+              </div>
+            </div>
           </div>
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>肌肤病症 — 脚后跟皴裂</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">高女士，每年冬季脚后跟皴裂，疼痛难忍。坚持每晚涂抹七予膏一周后，皴裂完全修复。</p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              我最害怕的就是冬天了，脚后跟皲裂疼痛难忍，试过多种方式效果都不是很好。家人也帮忙找过各种偏方，都以失败告终了。没想到用七予膏完全修复了，真的太感谢七予膏。
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg3.jpg" alt=""></div>
+          <!-- 肌肤病症 end -->
+          <div class="swiper-slide">
+            <div class="content-slide">
+              <!-- 一个案例 -->
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>手术及并发症皮损 — 缝针疤痕修复</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">4岁男孩，额头碰伤后缝合了5针。拆线后，坚持早晚涂抹七予，半年以后，皮肤基本恢复，
+                  看不出疤痕。</p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  做家长的就怕小孩子磕磕碰碰，没想到一下子缝了5针，这么小的孩子真怕留下永久的疤痕。还好有七予膏，坚持涂抹真的很有效，恢复后完全看不出疤痕了。
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg4.jpg" alt=""></div>
+              </div>
+              <!-- 一个案例 -->
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>手术及并发症皮损 — 缝针疤痕修复</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">某女士，两年前做甲状腺结节手术后，伤口部位有出现增生。坚持涂抹七予膏一个月后，
+                  增生部分变小。目前还在坚持涂抹中。</p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  没想到还有七予膏这么神奇的药膏，对于伤口部位的增生这么有效，一定继续坚持涂抹。七予膏真的很赞，会继续使用的。
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg5.jpg" alt=""></div>
+              </div>
+              <!-- 一个案例 -->
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>手术及并发症破损 — 痔疮</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">该患者为严重脓性痤疮，怀着好奇心对该药膏进行了试用。经3天使用，皮肤明显消肿，
+                  脓性物质完全消除，皮肤光洁恢复正常肤色。坚持使用一周后，之前的痤疮印基本消除。</p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  刚开始我也是半信半疑，心里没有底，想着反正都这样了，就试试吧。现在真的是充满惊喜，太神奇了，3天后就明显消肿了。看着自己一天天变好，这种心情简直太难形容了。大概用了一周，痤疮印就基本消除了。回想之前用了各种方法都没有改善，现在真的对七予膏相见恨晚。不过好在真的有这种奇效的膏药给我们患者带来希望，解决创伤的同时更重要的是重燃对生活的希望和向往，真心推荐！
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg6.jpg" alt=""></div>
+              </div>
+              <!-- 一个案例 -->
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>手术及并发症破损 — 痔疮</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">
+                  迅达电梯临沂公司孟经理，患痔疮（内痔）多年，经常复发。2019年底，因喝酒过多，痔疮严重，影响了日常活动。用了药膏一周，完全康复了，至今无复发。事后分析，因为每天大便，毒素侵蚀伤口，影响愈合。涂抹药膏后，创面形成一层保护膜，隔离大便毒素，伤口愈合就会很快。
+                </p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  痔疮是一个难以启齿又非常恼人的病，平时就怕因为生活不规律引起复发，但是因为工作应酬真的避免不了喝酒。没想到这次喝酒过多复发后直接影响了正常生活，苦恼不堪。幸好用了七予膏，不仅拯救了我，也让我的生活回归正常。而且有七予膏在，平时再也不必提心吊胆怕痔疮复发了。
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg10.jpg" alt=""></div>
+              </div>
+              <!-- 一个案例 -->
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>手术及并发症破损 — 褥疮</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">
+                  山东临沂，贾女士，女，79岁，卧床15年，褥疮七八年一直治不好。使用七予膏后，开始愈合，但由于褥疮洞太深，坚持使用了半年，目前已经长平。
+                </p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  身患褥疮让我和家人痛苦不堪，我们都知道的褥疮非常难根除，所以一直在消极治疗和绝望边缘。没想到偶然了解到七予膏后，真的给予了我新的希望，看着一天天好转心里别提多开心了。现在已经使用半年了，还会继续使用下去。
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg7.jpg" alt=""></div>
+              </div>
+              <!-- 一个案例 -->
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>手术及并发症破损 — 褥疮</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">
+                  在国内临床试用期间，针对国内专业护工群所提供的病例进行筛选，选择出较为严重的褥疮三期患者。该患者清创敷治，使用七予膏两周后，伤口完全愈合。
+                </p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  如果不是自己的亲身经历，真的很难相信七予膏这么神奇的治愈效果。我是褥疮三期，本以为任何药膏都无济于事了，没想到仅仅用了七予膏两周，伤口就完全愈合了。我迫不及待地告诉其他患者，真的是天大的福音！希望更多人因此痊愈起来！
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg8.jpg" alt=""></div>
+              </div>
+            </div>
           </div>
-        </div>
-        <div class="swiper-slide swiper-no-swiping">
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>手术及并发症皮损 — 缝针疤痕修复</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">4岁男孩，额头碰伤后缝合了5针。拆线后，坚持早晚涂抹七予，半年以后，皮肤基本恢复，
-              看不出疤痕。</p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              做家长的就怕小孩子磕磕碰碰，没想到一下子缝了5针，这么小的孩子真怕留下永久的疤痕。还好有七予膏，坚持涂抹真的很有效，恢复后完全看不出疤痕了。
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg4.jpg" alt=""></div>
+          <!-- 手术及并发症皮损 end -->
+          <div class="swiper-slide">
+            <div class="content-slide">
+              <!-- 一个案例 -->
+              <div class="case_module">
+                <h2 class="brand_group_title">
+                  <span></span>
+                  <p>内分泌疾病 — 糖尿病足案例</p>
+                </h2>
+                <h3 class="fubiaoti">案例说明：</h3>
+                <p class="shuoming">
+                  该药膏在加纳通过FDA审批后，进入当地医院，针对严重的糖尿病足患者进行临床施治。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该患者的糖尿病足程度非常严重，无奈下已经决定实施截肢手术防止进一步溃烂。此时尝试使用该药膏，仅仅一周后，伤口在没有继续溃烂的基础上，肌肤出现明显恢复功能，历经四周时间伤口达到基本愈合，令患者免经截肢之苦，重新燃起治愈的希望。
+                </p>
+                <h3 class="fubiaoti">患者自述：</h3>
+                <p class="zishu">
+                  用这个药膏之前已经很绝望了，面临截肢心里像死灰一般，以为忍受了那么多痛苦还是逃离不了这种厄运，但真的没想到，七予膏拯救了我。在已经放弃了希望的情况下，没想到七予膏迅速制止了我的伤口溃烂，而且出现明显的肌肤恢复，这对我来说真的是给了我奇迹般的希望。使用了四周之后伤口基本愈合，这不仅让我不用截肢，而且给了我很大的信心，也改变了我和家人的生活，真的非常感恩！
+                </p>
+                <div class="thumbnail"><img src="../images/caseimg9.jpg" alt=""></div>
+              </div>
+            </div>
           </div>
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>手术及并发症皮损 — 缝针疤痕修复</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">某女士，两年前做甲状腺结节手术后，伤口部位有出现增生。坚持涂抹七予膏一个月后，
-              增生部分变小。目前还在坚持涂抹中。</p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              没想到还有七予膏这么神奇的药膏，对于伤口部位的增生这么有效，一定继续坚持涂抹。七予膏真的很赞，会继续使用的。
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg5.jpg" alt=""></div>
-          </div>
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>手术及并发症破损 — 痔疮</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">该患者为严重脓性痤疮，怀着好奇心对该药膏进行了试用。经3天使用，皮肤明显消肿，
-              脓性物质完全消除，皮肤光洁恢复正常肤色。坚持使用一周后，之前的痤疮印基本消除。</p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              刚开始我也是半信半疑，心里没有底，想着反正都这样了，就试试吧。现在真的是充满惊喜，太神奇了，3天后就明显消肿了。看着自己一天天变好，这种心情简直太难形容了。大概用了一周，痤疮印就基本消除了。回想之前用了各种方法都没有改善，现在真的对七予膏相见恨晚。不过好在真的有这种奇效的膏药给我们患者带来希望，解决创伤的同时更重要的是重燃对生活的希望和向往，真心推荐！
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg6.jpg" alt=""></div>
-          </div>
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>手术及并发症破损 — 痔疮</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">
-              迅达电梯临沂公司孟经理，患痔疮（内痔）多年，经常复发。2019年底，因喝酒过多，痔疮严重，影响了日常活动。用了药膏一周，完全康复了，至今无复发。事后分析，因为每天大便，毒素侵蚀伤口，影响愈合。涂抹药膏后，创面形成一层保护膜，隔离大便毒素，伤口愈合就会很快。
-            </p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              痔疮是一个难以启齿又非常恼人的病，平时就怕因为生活不规律引起复发，但是因为工作应酬真的避免不了喝酒。没想到这次喝酒过多复发后直接影响了正常生活，苦恼不堪。幸好用了七予膏，不仅拯救了我，也让我的生活回归正常。而且有七予膏在，平时再也不必提心吊胆怕痔疮复发了。
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg6.jpg" alt=""></div>
-          </div>
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>手术及并发症破损 — 褥疮</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">
-              山东临沂，贾女士，女，79岁，卧床15年，褥疮七八年一直治不好。使用七予膏后，开始愈合，但由于褥疮洞太深，坚持使用了半年，目前已经长平。
-            </p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              身患褥疮让我和家人痛苦不堪，我们都知道的褥疮非常难根除，所以一直在消极治疗和绝望边缘。没想到偶然了解到七予膏后，真的给予了我新的希望，看着一天天好转心里别提多开心了。现在已经使用半年了，还会继续使用下去。
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg7.jpg" alt=""></div>
-          </div>
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>手术及并发症破损 — 褥疮</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">
-              在国内临床试用期间，针对国内专业护工群所提供的病例进行筛选，选择出较为严重的褥疮三期患者。该患者清创敷治，使用七予膏两周后，伤口完全愈合。
-            </p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              如果不是自己的亲身经历，真的很难相信七予膏这么神奇的治愈效果。我是褥疮三期，本以为任何药膏都无济于事了，没想到仅仅用了七予膏两周，伤口就完全愈合了。我迫不及待地告诉其他患者，真的是天大的福音！希望更多人因此痊愈起来！
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg8.jpg" alt=""></div>
-          </div>
-        </div>
-        <div class="swiper-slide swiper-no-swiping">
-          <!-- 一个案例 -->
-          <div class="case_module">
-            <h2 class="brand_group_title">
-              <span></span>
-              <p>内分泌疾病 — 糖尿病足案例</p>
-            </h2>
-            <h3 class="fubiaoti">案例说明：</h3>
-            <p class="shuoming">
-              该药膏在加纳通过FDA审批后，进入当地医院，针对严重的糖尿病足患者进行临床施治。<br>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;该患者的糖尿病足程度非常严重，无奈下已经决定实施截肢手术防止进一步溃烂。此时尝试使用该药膏，仅仅一周后，伤口在没有继续溃烂的基础上，肌肤出现明显恢复功能，历经四周时间伤口达到基本愈合，令患者免经截肢之苦，重新燃起治愈的希望。
-            </p>
-            <h3 class="fubiaoti">患者自述：</h3>
-            <p class="zishu">
-              用这个药膏之前已经很绝望了，面临截肢心里像死灰一般，以为忍受了那么多痛苦还是逃离不了这种厄运，但真的没想到，七予膏拯救了我。在已经放弃了希望的情况下，没想到七予膏迅速制止了我的伤口溃烂，而且出现明显的肌肤恢复，这对我来说真的是给了我奇迹般的希望。使用了四周之后伤口基本愈合，这不仅让我不用截肢，而且给了我很大的信心，也改变了我和家人的生活，真的非常感恩！
-            </p>
-            <div class="thumbnail"><img src="../images/caseimg9.jpg" alt=""></div>
-          </div>
+          <!-- 内分泌疾病 end -->
         </div>
       </div>
     </div>
@@ -266,9 +340,10 @@
     <div class="footer-main container-fluid">
       <div class="footer-group container">
         <img class="logo" src="../images/logo.png" alt="北京奇愈生物科技有限公司">
+        <!-- footer-middle内容pc端显示 移动端隐藏 -->
         <div class="footer-middle">
           <ul class="nav">
-            <li><a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+            <li><a href="../index.html">首&emsp;&emsp;页</a></li>
             <li>|</li>
             <li><a href="brand.html">品牌故事</a></li>
             <li>|</li>
@@ -294,6 +369,14 @@
             </div>
           </div>
         </div>
+        <!-- m-footer-middle内容移动端显示 pc端隐藏 -->
+        <div class="m-footer-middle">
+          <h1>北京奇愈生物科技有限公司</h1>
+          <p>地址：北京市朝阳区安立路1号1幢一层156</p>
+          <p>邮箱：qiyu@qiyusw.cn</p>
+          <p>电话：010-64653636</p>
+          <p>抖音：beijingqiyusw</p>
+        </div>
         <div class="ewm">
           <div class="module">
             <img src="../images/douyin.png" alt="企业抖音">
@@ -311,55 +394,45 @@
         <span>COPYRIGHT 2019-2020</span>
         <span>北京奇愈生物科技有限公司</span>
         <span>ALL RIGHTS RESERVED</span>
-        <span>京ICP备15005787号</span>
+        <span><a href="http://beian.miit.gov.cn" target="_blank">京ICP备15005787号</a></span>
       </div>
     </div>
   </footer>
-  <script>
+  <!-- swiper -->
+  <script src="../js/idangerous.swiper.min.js"></script>
+  <script type="text/javascript">
     $(function () {
-      function setCurrentSlide(ele, index) {
-        $(".swiper1 .swiper-slide").removeClass("selected");
-        ele.addClass("selected");
-        //swiper1.initialSlide=index;
-      }
-      var swiper1 = new Swiper('.swiper1', {
-        //					设置slider容器能够同时显示的slides数量(carousel模式)。
-        //					可以设置为number或者 'auto'则自动根据slides的宽度来设定数量。
-        //					loop模式下如果设置为'auto'还需要设置另外一个参数loopedSlides。
-        slidesPerView: 5.5,
-        paginationClickable: true,//此参数设置为true时，点击分页器的指示点分页器会控制Swiper切换。
-        spaceBetween: 10,//slide之间的距离（单位px）。
-        freeMode: true,//默认为false，普通模式：slide滑动时只滑动一格，并自动贴合wrapper，设置为true则变为free模式，slide会根据惯性滑动且不会贴合。
-        loop: false,//是否可循环
-        onTab: function (swiper) {
-          var n = swiper1.clickedIndex;
+      var tabsSwiper;
+      tabsSwiper = new Swiper('.swiper-container', {
+        speed: 500,
+        onInit: function (swiper) {
+          var H = $(".content-slide").eq(tabsSwiper.activeIndex).height();
+          $(".swiper-slide").css('height', H + 350 + 'px');
+          $(".swiper-wrapper").css('height', H + 350 + 'px');
+          console.log(H);
+        },
+        onSlideChangeStart: function () {
+          var H = $(".content-slide").eq(tabsSwiper.activeIndex).height();
+          $(".swiper-slide").css('height', H + 100 + 'px');
+          $(".swiper-wrapper").css('height', H + 100 + 'px');
+          $(".tabs .on").removeClass('on');
+          $(".tabs li").eq(tabsSwiper.activeIndex).addClass('on');
         }
-      });
-      swiper1.slides.each(function (index, val) {
-        var ele = $(this);
-        ele.on("click", function () {
-          setCurrentSlide(ele, index);
-          swiper2.slideTo(index, 500, false);
-          //mySwiper.initialSlide=index;
-        });
       });
 
-      var swiper2 = new Swiper('.swiper2', {
-        //freeModeSticky  设置为true 滑动会自动贴合  
-        direction: 'horizontal',//Slides的滑动方向，可设置水平(horizontal)或垂直(vertical)。
-        loop: false,
-        //					effect : 'fade',//淡入
-        //effect : 'cube',//方块
-        //effect : 'coverflow',//3D流
-        //					effect : 'flip',//3D翻转
-        autoHeight: true,//自动高度。设置为true时，wrapper和container会随着当前slide的高度而发生变化。
-        onSlideChangeEnd: function (swiper) {  //回调函数，swiper从一个slide过渡到另一个slide结束时执行。
-          var n = swiper.activeIndex;
-          setCurrentSlide($(".swiper1 .swiper-slide").eq(n), n);
-          swiper1.slideTo(n, 500, false);
-        }
+      $(".tabs li").on('touchstart mousedown', function (e) {
+        e.preventDefault()
+        $(".tabs .on").removeClass('on');
+        $(this).addClass('on');
+        tabsSwiper.swipeTo($(this).index());
+
       });
-    });
+
+      $(".tabs li").click(function (e) {
+        e.preventDefault();
+      });
+    });//end
+
   </script>
 </body>
 

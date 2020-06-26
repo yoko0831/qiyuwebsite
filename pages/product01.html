@@ -6,15 +6,34 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="keywords" content="">
   <meta name="description" content="">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport" />
+  <meta content="yes" name="apple-mobile-web-app-capable" />
+  <meta content="black" name="apple-mobile-web-app-status-bar-style" />
+  <meta content="telephone=no" name="format-detection" />
+  <meta content="email=no" name="format-detection" />
   <title>北京奇愈生物科技有限公司——产品中心</title>
   <link rel="stylesheet" href="../css/reset.css">
-  <link rel="stylesheet" href="../css/common.css">
-  <link rel="stylesheet" href="../css/css.css">
-  <link rel="icon" type="image/x-icon" href="favicon.ico" />
+  <link rel="stylesheet" href="../css/swiper.min.css">
+  <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <script src="../js/jquery-1.8.3.min.js"></script>
   <script src="../js/common.js"></script>
-
+  <!-- 根据分辨率加载相应css -->
+  <!-- pc端css -->
+  <link rel="stylesheet" type="text/css" href="../css/common.css" media="screen and (min-width:960px)" />
+  <link rel="stylesheet" type="text/css" href="../css/css.css" media="screen and (min-width:960px)" />
+  <!-- 移动端css -->
+  <link rel="stylesheet" type="text/css" href="../css/m_common.css" media="screen and (max-width:959px)" />
+  <link rel="stylesheet" type="text/css" href="../css/m_css.css" media="screen and (max-width:959px)" />
+  <!-- 移动端适配rem.js -->
+  <script src="../js/rem.js" media="screen and (max-width:959px)"></script>
+  <script>
+    $(function () {
+      $(".nav_btn").click(function () {
+        $(".nav_arrow").slideToggle();
+        $(".nav").slideToggle();
+      })
+    })
+  </script>
 </head>
 
 <body>
@@ -24,6 +43,7 @@
       <img src="../images/logo.png" alt="奇愈生物科技">
       <p>源自非洲原始部落<br />专注疑难创伤的奇愈力量</p>
     </a>
+    <!-- main 内容pc端显示 移动端隐藏 -->
     <div class="main">
       <div class="info">
         <div class="search_group">
@@ -37,7 +57,7 @@
       </div>
       <!-- nav -->
       <ul class="nav" id="nav">
-        <li><a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+        <li><a href="../index.html">首&emsp;&emsp;页</a></li>
         <li><a href="brand.html">品牌故事</a></li>
         <li>
           <a href="product.html" class="active">产品中心</a>
@@ -49,7 +69,7 @@
           </div>
         </li>
         <li><a href="case.html">客户案例</a>
-          <div class="xiala" style="left: -27px;">
+          <div class="xiala" style="left: -38px;">
             <img src="../images/navarrow.png" alt="">
             <ul>
               <li style="width: 152px;"><a href="#">七予抑菌膏案例</a></li>
@@ -73,18 +93,61 @@
         <li><a href="contactus.html">联系我们</a></li>
       </ul>
     </div>
+    <!-- m-main 内容移动端显示 pc端隐藏 -->
+    <div class="m-main">
+      <div class="phone_group">
+        <img src="../images/icon_phone.png" alt="">
+        <p>010-64653636</p>
+      </div>
+      <a href="#" class="nav_btn"><img src="../images/m_nav_btn.png" alt=""></a>
+      <div class="nav_arrow"><img src="../images/m_nav_arrow.png" alt=""></div>
+      <ul class="nav">
+        <li><a href="../index.html">首&emsp;&emsp;页</a></li>
+        <li><a href="brand.html">品牌故事</a></li>
+        <li><a href="product.html">产品中心</a>
+          <ul class="second_nav">
+            <li><a href="product.html">七予膏</a></li>
+          </ul>
+        </li>
+        <li><a href="case.html">客户案例</a>
+          <ul class="second_nav">
+            <li><a href="case.html">七予抑菌膏案例</a></li>
+            <li>|</li>
+            <li><a href="#">七予修复膏案例</a></li>
+          </ul>
+        </li>
+        <li><a href="aboutus.html">走进奇愈</a></li>
+        <li><a href="company.html">公司动态</a>
+          <ul class="second_nav">
+            <li><a href="company.html">社会责任</a></li>
+            <li>|</li>
+            <li><a href="newslist.html">公司新闻</a></li>
+            <li>|</li>
+            <li><a href="knowledgelist.html">科普知识</a></li>
+            <li>|</li>
+            <li><a href="overseas.html">海外合作</a></li>
+            <li>|</li>
+            <li><a href="partner.html">合作伙伴</a></li>
+          </ul>
+        </li>
+        <li><a href="contactus.html">联系我们</a></li>
+      </ul>
+    </div>
   </header>
   <!-- banenr -->
-  <img class="pagebanner" src="../images/pagebanner5.png" alt="北京奇愈生物科技有限公司">
+  <img class="pagebanner" src="../images/pagebanner5_m.jpg"
+    srcset="../images/pagebanner5_m.jpg 960w, ../images/pagebanner5.jpg 1x" alt="北京奇愈生物科技有限公司" />
   <!-- page location -->
   <div class="location_group container">
-    <div><img src="../images/product_title.png" alt="产品中心"></div>
+    <div><img src="../images/product_title.png" alt="产品中心" class="product_title_img"></div>
+    <!-- location_menu移动端不显示 -->
     <div class="location_menu">
       当前位置：<a href="../index.html">首页</a><span>></span><a href="product.html">产品中心</a><span>></span><a
         href="product.html">七予膏</a><span>></span><a href="product01.html">七予抑菌膏</a>
     </div>
   </div>
   <!-- 产品详情 -->
+  <!-- 详情内容pc端、移动端传不同图片 -->
   <div class="product_detail container">
     <p class="guige"><i>▍</i><span>【产品名称】</span>七予抑菌膏</p>
     <p class="guige"><i>▍</i><span>【主要成分】</span>乳木果油、马鞭草、薄荷、乳香等多种天然中草药。</p>
@@ -94,7 +157,8 @@
     <p class="guige"><i>▍</i><span>【适用范围】</span>适用于皮肤创伤部位的抑菌和愈合。</p>
     <br>
     <br>
-    <img class="proimg" src="../images/pro_detail_img1.png" alt="">
+    <img class="proimg" src="../images/pro_detail_img1_m.png"
+      srcset="../images/pro_detail_img1_m.png 960w, ../images/pro_detail_img1.png 1x" alt="" />
     <br>
     <br>
     <hr class="line">
@@ -106,7 +170,8 @@
     <h3 class="biaoti">一）针对难以愈合伤口的抑菌使用：以糖尿病足为例</h3>
     <br>
     <br>
-    <img class="proimg" src="../images/inset08.png" alt="">
+    <img class="proimg" src="../images/inset08_m.png" srcset="../images/inset08_m.png 960w, ../images/inset08.png 1x"
+      alt="" />
     <br>
     <br>
     <hr class="line">
@@ -115,7 +180,8 @@
     <h3 class="biaoti">二）针对严重外伤性皮肤损伤的抑菌使用：以烧烫伤为例</h3>
     <br>
     <br>
-    <img class="proimg" src="../images/inset09.png" alt="">
+    <img class="proimg" src="../images/inset09_m.png" srcset="../images/inset09_m.png 960w, ../images/inset09.png 1x"
+      alt="" />
     <br>
     <br>
     <hr class="line">
@@ -124,7 +190,8 @@
     <h3 class="biaoti">三）针对其他普通皮肤损伤或皮肤皲裂，如严重足跟皲裂、干手症、癣疥等的抑菌使用：以干手症为例</h3>
     <br>
     <br>
-    <img class="proimg" src="../images/inset10.png" alt="">
+    <img class="proimg" src="../images/inset10_m.png" srcset="../images/inset10_m.png 960w, ../images/inset10.png 1x"
+      alt="" />
     <br>
     <br>
     <hr class="line">
@@ -132,26 +199,30 @@
     <br>
     <p class="guige"><i>▍</i><span>【用量建议】</span>每日1-3次，以均匀分布创面为度。严重创伤建议药膏完全覆盖创面，不暴露皮肤。</p>
     <p class="guige">
-      <i>▍</i><span>【注意事项】</span>1、对本产品过敏者禁止使用。<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;2、本产品性状在室温超过25℃时会有液化现象，冷藏后复原，温度低于12℃会膏体变硬，软化后即可使用，性状改变不<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;影响任何产品功能效果。<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;3、孕产妇谨慎使用或遵医嘱。<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;4、避免接触眼睛，请将本产品放置在儿童不能接触到的地方。<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;5、本产品用量使用以纱布不沾附伤口为准；换用时需要再次清洗伤口，再次涂抹新药；纱布和伤口之间保持适当距离，<br>&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&emsp;以保证伤口的湿润。<br>
-      &emsp;&emsp;&emsp;&emsp;&emsp;&emsp;&ensp;6、本产品为卫生消毒类用品，不能替代药品。
+      <i>▍</i><span>【注意事项】</span>
     </p>
+    <ul class="ullist">
+      <li>1、对本产品过敏者禁止使用。</li>
+      <li>2、本产品性状在室温超过25℃时会有液化现象，冷藏后复原，温度低于12℃会膏体变硬，软化后即可使用，性状改变不影响任何产品功能效果。</li>
+      <li>3、孕产妇谨慎使用或遵医嘱。</li>
+      <li>4、避免接触眼睛，请将本产品放置在儿童不能接触到的地方。</li>
+      <li>5、本产品用量使用以纱布不沾附伤口为准；换用时需要再次清洗伤口，再次涂抹新药；纱布和伤口之间保持适当距离，以保证伤口的湿润。</li>
+      <li>6、本产品为卫生消毒类用品，不能替代药品。</li>
+    </ul>
     <p class="guige"><i>▍</i><span>【产品规格】</span>50克/瓶</p>
     <p class="guige"><i>▍</i><span>【有效期限】</span>1年</p>
     <p class="guige"><i>▍</i><span>【贮藏方法】</span>本产品应密封，置于避光、阴凉、干燥处。建议：首次使用后冷藏放置更佳。</p>
   </div>
 
   <!-- footer -->
-  <footer clasproduct_menus="footer container-fluid">
+  <footer class="footer container-fluid">
     <div class="footer-main container-fluid">
       <div class="footer-group container">
         <img class="logo" src="../images/logo.png" alt="北京奇愈生物科技有限公司">
+        <!-- footer-middle内容pc端显示 移动端隐藏 -->
         <div class="footer-middle">
           <ul class="nav">
-            <li><a href="../index.html">首&nbsp;&nbsp;&nbsp;&nbsp;页</a></li>
+            <li><a href="../index.html">首&emsp;&emsp;页</a></li>
             <li>|</li>
             <li><a href="brand.html">品牌故事</a></li>
             <li>|</li>
@@ -177,6 +248,14 @@
             </div>
           </div>
         </div>
+        <!-- m-footer-middle内容移动端显示 pc端隐藏 -->
+        <div class="m-footer-middle">
+          <h1>北京奇愈生物科技有限公司</h1>
+          <p>地址：北京市朝阳区安立路1号1幢一层156</p>
+          <p>邮箱：qiyu@qiyusw.cn</p>
+          <p>电话：010-64653636</p>
+          <p>抖音：beijingqiyusw</p>
+        </div>
         <div class="ewm">
           <div class="module">
             <img src="../images/douyin.png" alt="企业抖音">
@@ -194,7 +273,7 @@
         <span>COPYRIGHT 2019-2020</span>
         <span>北京奇愈生物科技有限公司</span>
         <span>ALL RIGHTS RESERVED</span>
-        <span>京ICP备15005787号</span>
+        <span><a href="http://beian.miit.gov.cn" target="_blank">京ICP备15005787号</a></span>
       </div>
     </div>
   </footer>

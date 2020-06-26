@@ -242,6 +242,10 @@ html,body{
   color: #595757;
   letter-spacing: 1px;
 }
+.footer-info > div a{
+  color: #595757;
+}
+
 /* 需隐藏移动端内容 */
 .footer .m-footer-middle{
   display: none;
