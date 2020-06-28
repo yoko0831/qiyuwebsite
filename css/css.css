@@ -847,3 +847,39 @@ animation: rotateicon2 1s 0.3s ;
 -webkit-animation-fill-mode: both;
 animation-fill-mode: both;
 }
+
+/* 搜索结果页 */
+.location_group .search_title{
+  font-size: 24px;
+  color: #d09f69;
+  line-height: 80px;
+}.location_group .search_title span{
+  padding: 0 10px;
+}
+.search_group_list{
+  width: 100%;
+  margin: 30px auto;
+}
+.search_group_list li{
+  height: 60px;
+  line-height: 60px;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px dashed #c9caca;
+}
+.search_group_list li a{
+  font-size: 18px;
+  color: #323132;
+  width: 1000px;
+  white-space: nowrap; 
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.search_group_list li p{
+  font-size: 16px;
+  color: #323132;
+}
+.search_group_list li a span{
+  color: #d09f69;
+  font-weight: bold;
+}

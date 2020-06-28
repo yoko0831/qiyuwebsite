@@ -11,12 +11,14 @@
   <meta content="black" name="apple-mobile-web-app-status-bar-style" />
   <meta content="telephone=no" name="format-detection" />
   <meta content="email=no" name="format-detection" />
-  <title>北京奇愈生物科技有限公司——公司动态</title>
+  <title>北京奇愈生物科技有限公司——搜索结果</title>
   <link rel="stylesheet" href="../css/reset.css">
   <link rel="stylesheet" href="../css/swiper.min.css">
   <link rel="icon" type="image/x-icon" href="../favicon.ico" />
   <script src="../js/jquery-1.8.3.min.js"></script>
   <script src="../js/common.js"></script>
+  <!-- 处理响应式图片js -->
+  <script src="../js/picturefill.min.js"></script>
   <!-- 根据分辨率加载相应css -->
   <!-- pc端css -->
   <link rel="stylesheet" type="text/css" href="../css/common.css" media="screen and (min-width:960px)" />
@@ -26,6 +28,7 @@
   <link rel="stylesheet" type="text/css" href="../css/m_css.css" media="screen and (max-width:959px)" />
   <!-- 移动端适配rem.js -->
   <script src="../js/rem.js" media="screen and (max-width:959px)"></script>
+
   <script>
     $(function () {
       $(".nav_btn").click(function () {
@@ -48,7 +51,7 @@
       <div class="info">
         <div class="search_group">
           <input type="text" placeholder="Search...">
-          <button onclick="window.location.href='searchlist.html'"><img src="../images/icon_search.png" alt=""></button>
+          <button οnclick="location.href='searchlist.html'"><img src="../images/icon_search.png" alt=""></button>
         </div>
         <div class="phone_group">
           <img src="../images/icon_phone.png" alt="">
@@ -78,7 +81,7 @@
           </div>
         </li>
         <li><a href="aboutus.html">走进奇愈</a></li>
-        <li><a href="company.html" class="active">公司动态</a>
+        <li><a href="company.html">公司动态</a>
           <div class="xiala">
             <img src="../images/navarrow.png" alt="">
             <ul>
@@ -135,82 +138,76 @@
     </div>
   </header>
   <!-- banenr -->
-  <img class="pagebanner" src="../images/pagebanner3.jpg"
-    srcset="../images/pagebanner3_m.jpg 960w, ../images/pagebanner3.jpg 1x" alt="北京奇愈生物科技有限公司" />
+  <img class="pagebanner" src="../images/pagebanner2.jpg"
+    srcset="../images/pagebanner2_m.jpg 960w, ../images/pagebanner2.jpg 1x" alt="北京奇愈生物科技有限公司" />
   <!-- page location -->
   <div class="location_group container">
-    <div><img src="../images/company_title.png" class="company_title_img" alt="合作伙伴"></div>
-    <div class="location_menu">
-      当前位置：<a href="../index.html">首页</a><span>></span><a href="company.html">公司动态</a><span>></span><a
-        href="partner.html">合作伙伴</a>
+    <div>
+      <p class="search_title">搜索<span>糖尿病</span>的结果</p>
+    </div>
+    <div class=" location_menu">
+      当前位置：<a href="../index.html">首页</a><span>></span><a href="searchlist.html">搜索结果</a>
     </div>
   </div>
-  <!-- contact -->
-  <div class="contact_group">
-    <!-- 合作伙伴 -->
-    <div class="contact_group_1 container">
-      <h2 class="brand_group_title">
-        <span></span>
-        <p>合作伙伴</p>
-      </h2>
-      <ul class="partner_list container">
-        <li>
-          <a href="http://www.gsm.pku.edu.cn/" target="_blank">
-            <img src="../images/partner_logo1.png"
-              srcset="../images/partner_logo1_m.png 960w, ../images/partner_logo1.png 1x" alt="北大光华管理学院" />
-          </a>
-        </li>
-        <li>
-          <a href="http://www.sps.tsinghua.edu.cn/" target="_blank">
-            <img src="../images/partner_logo2.png"
-              srcset="../images/partner_logo2_m.png 960w, ../images/partner_logo2.png 1x" alt="清华药学院" />
-          </a>
-        </li>
-        <li>
-          <a href="http://www.btbu.edu.cn/" target="_blank">
-            <img src="../images/partner_logo3.png"
-              srcset="../images/partner_logo3_m.png 960w, ../images/partner_logo3.png 1x" alt="北京工商大学" />
-          </a>
-        </li>
-        <li>
-          <a href="http://www.buct.edu.cn/" target="_blank">
-            <img src="../images/partner_logo4.png"
-              srcset="../images/partner_logo4_m.png 960w, ../images/partner_logo4.png 1x" alt="北京化工大学" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.sf-express.com/cn/sc/" target="_blank">
-            <img src="../images/partner_logo5.png"
-              srcset="../images/partner_logo5_m.png 960w, ../images/partner_logo5.png 1x" alt="顺丰速运" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.1688.com/" target="_blank">
-            <img src="../images/partner_logo6.png"
-              srcset="../images/partner_logo6_m.png 960w, ../images/partner_logo6.png 1x" alt="阿里巴巴" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.tmall.com/" target="_blank">
-            <img src="../images/partner_logo7.png"
-              srcset="../images/partner_logo7_m.png 960w, ../images/partner_logo7.png 1x" alt="天猫" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.tencent.com/" target="_blank">
-            <img src="../images/partner_logo8.png"
-              srcset="../images/partner_logo8_m.png 960w, ../images/partner_logo8.png 1x" alt="腾讯" />
-          </a>
-        </li>
-        <li>
-          <a href="https://www.douyin.com/" target="_blank">
-            <img src="../images/partner_logo9.png"
-              srcset="../images/partner_logo9_m.png 960w, ../images/partner_logo9.png 1x" alt="抖音" />
-          </a>
-        </li>
+  <!-- search -->
+  <div class="search_group container">
+    <!-- 一页最多展示10条数据 -->
+    <ul class="search_group_list">
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+      <li>
+        <a href="#"><span>糖尿病</span>足是如何产生的，为什么特别难治？</a>
+        <p>2020年06月27日</p>
+      </li>
+    </ul>
+    <!-- 分页 -->
+    <div class="pagenum">
+      <ul class="pagelist">
+        <li><a href="#">首页</a></li>
+        <li class="thisclass"><a href="#">1</a></li>
+        <li><a href="#">2</a></li>
+        <li><a href="#">下一页</a></li>
+        <li><a href="#">末页</a></li>
+        <li><select style="width:36px">
+            <option value="#" selected="">1</option>
+            <option value="#">2</option>
+          </select></li>
       </ul>
     </div>
-
   </div>
   <!-- footer -->
   <footer class="footer container-fluid">

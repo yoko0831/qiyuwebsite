@@ -79,6 +79,7 @@ html,body{
   height: 23px;
   border: 0 none;
   background: #fff;
+  cursor: pointer;
 }
 .header .phone_group{
   display: flex;

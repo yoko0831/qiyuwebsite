@@ -50,7 +50,7 @@
       <div class="info">
         <div class="search_group">
           <input type="text" placeholder="Search...">
-          <button><img src="images/icon_search.png" alt=""></button>
+          <button οnclick="location.href='../searchlist.html'"><img src="images/icon_search.png" alt=""></button>
         </div>
         <div class="phone_group">
           <img src="images/icon_phone.png" alt="">
@@ -142,10 +142,10 @@
       <div class="swiper-wrapper">
         <!-- 宽度小于960时加载banner1_m 其余情况加载banner1-->
         <div class="swiper-slide">
-          <img src="images/banner1_m.jpg" srcset="images/banner1_m.jpg 960w, images/banner1.jpg 1x" />
+          <img src="images/banner1.jpg" srcset="images/banner1_m.jpg 960w, images/banner1.jpg 1x" />
         </div>
         <div class="swiper-slide">
-          <img src="images/banner2_m.jpg" srcset="images/banner2_m.jpg 960w, images/banner2.jpg 1x" />
+          <img src="images/banner2.jpg" srcset="images/banner2_m.jpg 960w, images/banner2.jpg 1x" />
         </div>
       </div>
       <!-- 如果需要分页器 -->
@@ -272,6 +272,10 @@
 <script>
   var mySwiper = new Swiper('.swiper-container', {
     loop: true, // 循环模式选项
+    autoplay: {
+      delay: 3000,
+      disableOnInteraction: false
+    },
     // 如果需要分页器
     pagination: {
       el: '.swiper-pagination',

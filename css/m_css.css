@@ -30,11 +30,12 @@
   display: none!important;
 }
 .introduce .module{
-  width: 3.33rem;
-  margin-right: 0.1rem;
+  /* width: 3.33rem; */
+  width: 32%;
 }
 .introduce .module > div{
-  width: 3.33rem;
+  /* width: 3.33rem; */
+  width: 100%;
   overflow: hidden;
   cursor: pointer;
 }
@@ -43,11 +44,13 @@
   transition: all .5s ease;
 }
 .introduce .module img{
-  width: 3.33rem;
-  height: 1.93rem;
+  /* width: 3.33rem; */
+  width: 100%;
+  /* height: 1.93rem; */
 }
 .introduce .module h1{
-  width: 3.33rem;
+  /* width: 3.33rem; */
+  width: 100%;
   height: 0.4rem;
   line-height: 0.4rem;
   margin-top: 0.06rem;
@@ -58,7 +61,8 @@
   border-bottom: 1px solid #efefef;
 }
 .introduce .module h3{
-  width: 3.33rem;
+  /* width: 3.33rem; */
+  width: 100%;
   font-size: 0.16rem;
   font-weight: bold;
   color: #3e3a39;
@@ -66,7 +70,8 @@
   margin-top: 0.15rem;
 }
 .introduce .module p{
-  width: 3.33rem;
+  /* width: 3.33rem; */
+  width: 100%;
   font-size: 0.15rem;
   color: #727171;
   line-height: 0.28rem;
